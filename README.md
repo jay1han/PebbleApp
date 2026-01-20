@@ -1,2 +1,5 @@
 # PebbleApp
-Watch-app
+
+This is the watchapp to go with Dolbom.
+
+

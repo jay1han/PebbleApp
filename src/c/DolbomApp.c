@@ -5,12 +5,12 @@
 static Window *s_window;
 static TextLayer *s_text_layer;
 
-static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
+static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
     send_action(ACTION_DND);
     window_stack_pop_all(true);
 }
 
-static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
+static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
     send_action(ACTION_FIND);
     window_stack_pop_all(true);
 }
@@ -33,7 +33,7 @@ static struct {
 } options[3] = {
     {NULL, 8, "Quiet mode"},
     {NULL, 64, "Find phone"},
-    {NULL, 120, "Do nothing"}
+    {NULL, 120, "Go back"}
 };
 
 static void window_load(Window *window) {
