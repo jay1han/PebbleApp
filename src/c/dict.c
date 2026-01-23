@@ -37,6 +37,7 @@ typedef enum {
     MSG_WIFI,
     MSG_BT,
     MSG_NOTI,
+    MSG_TYPE
 } msg_type_t;
 
 void send_action(action_t action) {
